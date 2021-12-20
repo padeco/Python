@@ -1,0 +1,5 @@
+Nossa meta era explorar e aproveitar a biblioteca padrão do Python em nossos próprios programas e aprender a encontrar soluções para problemas comuns de desenvolvimento de software na grande comunidade do Python.
+
+Importamos o módulo random da biblioteca padrão do Python para gerar números aleatórios chamando uma função desse módulo. Exploramos o módulo usando o IntelliSense no Visual Studio Code e vimos como podemos aprender sobre cada função do módulo consultando a documentação resumida do IntelliSense. Pesquisamos soluções para nossas necessidades usando o PyPI (Índice de Pacote do Python) e usamos o utilitário pip para instalar um pacote localmente e chamar uma função desse pacote.
+
+Sem esse ecossistema avançado para aproveitar, precisaríamos criar tudo sozinhos, o que seria demorado e propenso. Isso também exigiria um vasto conhecimento de Python antes que pudéssemos ser produtivos. Essa grande coleção de funcionalidades dos criadores do Python e da comunidade nos permite criar programas com mais rapidez e facilidade.
