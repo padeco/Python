@@ -50,6 +50,7 @@ clearConsole()
 
 #------------------------------------------------------------------------------3
 #FORMA ERRADA DE RECEBER DADOS DO USURARIO OU DE OUTROS PRGRAMAS, JA QUE VOCE ESTA USANDO SOMENTE O IMPUT E ESPECIFICANDO QUE A ENTRADA SEJA INTEIRA, E SE NAO FOR?
+#POR ISSO DEVERA SER USADO A FUNCAO ISNUMERIC()
 
 first_value = int(input('First Number: '))
 second_value = int(input('Second number: '))
