@@ -115,3 +115,4 @@ def ex14():
     print('Fim do EX: 14')
     os.system("pause")
     clearConsole()
+    
