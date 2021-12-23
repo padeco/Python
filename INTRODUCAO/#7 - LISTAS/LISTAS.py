@@ -25,7 +25,7 @@ print('\n')
 limpa.os.system('pause')
 limpa.clearConsole()
 
-
+########################################################################################################################
 '''
 Listas podem conter objetos arbitrários
 Uma lista pode conter qualquer variedade de objetos. Os elementos de uma lista podem ser todos do mesmo tipo:
@@ -59,6 +59,7 @@ print('\n')
 limpa.os.system('pause')
 limpa.clearConsole()
 
+########################################################################################################################
 '''Uma lista pode conter qualquer número de objetos, de zero a tantos quanto a memória do seu computador permitir:'''
 
 a = []
@@ -96,7 +97,7 @@ print('\n')
 print(a[-1])
 print(a[-2])
 print(a[-3])
-
+########################################################################################################################
 print('\n')
 limpa.os.system('pause')
 limpa.clearConsole()
@@ -115,6 +116,46 @@ print(a[:4], a[0:4]) #['foo', 'bar', 'baz', 'qux'] ['foo', 'bar', 'baz', 'qux']
 print(a[2:], a[2:len(a)]) #['baz', 'qux', 'quux', 'corge'] ['baz', 'qux', 'quux', 'corge']
 print(a[:4] + a[4:]) #['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
 print('\n')
-print(a[0:6:2]) #['foo', 'baz', 'quux']
+print(a[0:6:2]) #['foo', 'baz', 'quux'] # começa em ZERO e le ate 6 no caso o ultimo ja que nao tem ate 6 mas de 2 em 2
 print(a[1:6:2]) #['bar', 'qux', 'corge']
 print(a[6:0:-2])#['corge', 'qux', 'bar']
+########################################################################################################################
+
+print('\n')
+limpa.os.system('pause')
+limpa.clearConsole()
+
+#se colocar o s valores negativos ele ira fazer os passos inversamente ao normal
+
+print(a[::-1]) #['corge', 'quux', 'qux', 'baz', 'bar', 'foo']
+
+# Os operadores de concatenação ( +) e replicação ( *):
+
+print(a) # ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
+
+a + ['grault', 'garply'] # se usar o sinal de + ira adicionar os valores especificados na lista
+#['foo', 'bar', 'baz', 'qux', 'quux', 'corge', '<grault>', '<garply>']
+
+a * 2                   # multipica a lista em x determinado pelo parametro apos o *
+#['foo', 'bar', 'baz', 'qux', 'quux', 'corge', '<foo>', '<bar>', '<baz>','<qux>', '<quux>', '<corge>']
+
+['foo', 'bar', 'baz', 'qux', 'quux', 'corge'][2] #se for impresso Retornara o indice 2 da Lista = '<baz>'
+
+
+['foo', 'bar', 'baz', 'qux', 'quux', 'corge'][::-1] #sera impresso de forma contraria a partir do "-1" que é <corge> ['corge', 'quux', 'qux', 'baz', 'bar', 'foo']
+
+
+'quux' in ['foo', 'bar', 'baz', 'qux', 'quux', 'corge'] # verifica se '<quux>' esta na lista retorna um <bool> No caso true
+
+
+['foo', 'bar', 'baz'] + ['qux', 'quux', 'corge'] # soma as duas listas
+
+
+len(['foo', 'bar', 'baz', 'qux', 'quux', 'corge'][::-1]) # len conta quantas elementos tem na lista comecando de "-1" ate "-6" e retorna o valor  = 6
+
+print('If Comrade Napoleon says it, it must be right.'[::-1])
+
+print('\n')
+limpa.os.system('pause')
+limpa.clearConsole()
+##############################################################################################################################################
