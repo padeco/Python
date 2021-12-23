@@ -64,6 +64,7 @@ print(MLB_team)
 
 print(MLB_team1)
 print(MLB_team2)
+
 print('\n')
 limpa.os.system('pause')
 limpa.clearConsole()
