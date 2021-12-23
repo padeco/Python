@@ -152,10 +152,72 @@ a * 2                   # multipica a lista em x determinado pelo parametro apos
 
 
 len(['foo', 'bar', 'baz', 'qux', 'quux', 'corge'][::-1]) # len conta quantas elementos tem na lista comecando de "-1" ate "-6" e retorna o valor  = 6
-
+print('\n')
 print('If Comrade Napoleon says it, it must be right.'[::-1])
 
 print('\n')
 limpa.os.system('pause')
 limpa.clearConsole()
+
 ##############################################################################################################################################
+
+'''<Listas podem ser aninhadas>
+Você viu que um elemento em uma lista pode ser qualquer tipo de objeto. Isso inclui outra lista. 
+Uma lista pode conter sublistas, que por sua vez podem conter as próprias sublistas e assim por diante até uma profundidade arbitrária.
+
+Considere este exemplo (reconhecidamente inventado):'''
+x = ['a', ['bb', ['ccc', 'ddd'], 'ee', 'ff'], 'g', ['hh', 'ii'], 'j']
+
+x = ['a',                       # X[0] = 'a'
+    ['bb',                      # X[1] = <sublista> -> [1][0] = 'bb'
+        ['ccc', 'ddd'],         # X[1][1] = <subsublista> -> X[1][1][0] = 'ccc', X[1][1][1] = 'ddd'
+        'ee',                   # X[1][2] = 'ee'
+            'ff'],              # X[1][3] = 'ff'
+            'g',                # X[2] = 'g'
+            ['hh', 'ii'],       # X[3][0] = <lista> - > X[3][0] = 'hh', X[3][1] = 'ii'
+            'j']                # X[4] = 'j'
+
+print(x[1])
+
+print(x[1][0])
+
+print(x[1][1])
+
+print(x[1][2])
+
+print(x[1][3])
+
+print(x[3])
+
+print(x[3][0], x[3][1])
+
+
+'''No entanto, esteja ciente de que os operadores e funções se aplicam apenas à lista no nível que você especificar e não são recursivos . 
+Considere o que acontece quando você consulta a duração do xuso len()'''
+
+print(len(x)) #5
+
+x[0] #'a'
+
+x[1] #['bb', ['ccc', 'ddd'], 'ee', 'ff']
+
+x[2] #'g'
+
+x[3] #['hh', 'ii']
+
+x[4] #'j'
+
+'''X tem apenas cinco elementos - três strings e duas sublistas. Os elementos individuais nas sublistas não contam para xo comprimento de.
+
+Você encontraria uma situação semelhante ao usar o in operador:'''
+
+#<Para achar um elemento dentro de uma lista voce precisa passar o caminho de listas e sublistas onde ele se encontra>
+
+'ddd' in x          #false
+
+'ddd' in x[1]       #false
+
+'ddd' in x[1][1]    #true
+
+######################################################################################################################################################
+
