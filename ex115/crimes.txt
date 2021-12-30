@@ -1,3 +1,0 @@
-Furto;4
-homicidio;20
-roubo;10

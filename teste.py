@@ -1,8 +1,7 @@
-import limpa
-
-limpa.clearConsole()
+import pandas as pd
 
 
-a = [1, 2, 3, 4, 5]
-a.remove(3)
-print(a)
+file = pd.read_csv("C:\\Users\\manoel.torres\\OneDrive - Kumulus\\Documents\\GitHub\\Python\\ex1\\crimes.csv")
+df = pd.DataFrame(file)
+
+print(df[(df['Rolling year total number of offences'] > 10) & (df['Region'] == 'East') & (df['12 months ending']) & (df['PFA'])])
