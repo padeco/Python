@@ -1,6 +1,5 @@
-from classes import Funcoes
-funcoes = Funcoes()
+from classes import Menu
 
-funcoes.clearConsole()
 
-funcoes.menu()
+game = Menu()
+game.menu()
