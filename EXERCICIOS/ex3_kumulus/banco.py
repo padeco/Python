@@ -2,7 +2,7 @@
 class Cliente:
     def __init__(self, cliente, saldo):
         self.cliente = cliente
-        self.saldo = saldo
+        self.saldo = float(saldo)
          
     def sacar(self, valor):
         self.saldo -= valor
@@ -34,6 +34,7 @@ class Bradesco(Cliente):
         else:
             self.sacar(resultado)
             destino.depositar(valor)
+            print('Transferência realizada com sucesso!')
 
 class Itau(Cliente):
 
@@ -51,4 +52,5 @@ class Itau(Cliente):
         else:
             self.sacar(resultado)
             destino.depositar(valor)
+            print('Transferência realizada com sucesso!')
 
